@@ -27,7 +27,7 @@ with col3:
 with col4:
     overs_bowled=st.number_input('Overs Bowled: ',step=1)
 with col5:
-    wickets=st.number_input('Wickets Lost: ')
+    wickets=st.number_input('Wickets Lost: ',step=1)
 if st.button('Predict'):
     runs_left=target_runs-current_runs
     balls_left=120-overs_bowled*6
