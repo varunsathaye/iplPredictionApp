@@ -19,13 +19,13 @@ with col2:
 
 city=st.selectbox('Select the homeground city',cities)
 
-target_runs=st.number_input('Target: ')
+target_runs=st.number_input('Target: ',step=1)
 col3,col4,col5=st.columns(3)
 
 with col3:
-    current_runs=st.number_input('Score: ')
+    current_runs=st.number_input('Score: ',step=1)
 with col4:
-    overs_bowled=st.number_input('Overs Bowled: ')
+    overs_bowled=st.number_input('Overs Bowled: ',step=1)
 with col5:
     wickets=st.number_input('Wickets Lost: ')
 if st.button('Predict'):
